@@ -10,7 +10,9 @@ import { Satellite } from '../satellite';
 export class OrbitListComponent implements OnInit {
 
   @Input() satellites: Satellite[];
-  constructor() { }
+  constructor() { 
+	 //console.log("does it work");
+  }
 
   ngOnInit() {
   }
@@ -28,3 +30,10 @@ export class OrbitListComponent implements OnInit {
 	}
 
 }
+
+//   allElse(satellite: Satellite): boolean{ line 17
+// 	  if ((this.satellites.indexOf(satellite)+1)%2===1){
+// 		  return true;
+// 	  }
+// 	  return false;
+//   }
